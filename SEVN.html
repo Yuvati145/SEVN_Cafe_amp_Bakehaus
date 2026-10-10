@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SEVN — Café &amp; Bakehaus</title>
+<meta name="description" content="SEVN Café &amp; Bakehaus. Coffee, pastries and sourdough built around seven notes. Rooted in craftsmanship, guided by simplicity.">
+<meta name="theme-color" content="#31261C">
+<meta property="og:type" content="website"><meta property="og:title" content="SEVN — Café &amp; Bakehaus"><meta property="og:description" content="Elevating everyday moments. Rooted in craftsmanship, guided by simplicity.">
+<script type="application/ld+json" id="sevn-ld">{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"SEVN Café & Bakehaus","slogan":"Elevating everyday moments","servesCuisine":["Coffee","Bakery","Breakfast"],"telephone":"+91 22 4000 0707","address":{"@type":"PostalAddress","streetAddress":"Bandra Bandstand, Bandra West","addressLocality":"Mumbai","addressRegion":"Maharashtra","postalCode":"400050","addressCountry":"IN"},"openingHours":["Mo-Th 07:00-22:00","Fr 07:00-23:00","Sa 08:00-23:00","Su 08:00-21:00"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--mo:#31261C;--cr:#E2D9C9;--pa:#F2EBE1;--d:"Bodoni Moda",Georgia,serif;--u:Jost,ui-sans-serif,system-ui,sans-serif;--e:cubic-bezier(.22,1,.36,1);--pad:clamp(20px,5vw,72px)}
+*{box-sizing:border-box;margin:0}
+html{background:var(--pa)}
+body{font:300 16px/1.6 var(--u);color:var(--mo);-webkit-font-smoothing:antialiased;overflow-x:clip}
+body::before{content:"";position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.035;mix-blend-mode:multiply;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0;padding:0}
+:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+h1,h2,h3{font-family:var(--d);font-weight:400;letter-spacing:-.02em;line-height:1.04}
+h1{font-size:clamp(2.6rem,7vw,6.5rem)}h2{font-size:clamp(2rem,4.6vw,4.2rem)}h3{font-size:clamp(1.4rem,2vw,1.75rem)}
+.wrap{max-width:1180px;margin:auto}
+.lb,.nl,.lk,.btn,.sm,.chp{font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.lb{opacity:.6;margin-bottom:16px}
+.sm{opacity:.6;letter-spacing:.06em;text-transform:none;margin-top:20px}
+.body{max-width:58ch;opacity:.85;font-size:clamp(16px,1.3vw,19px);line-height:1.7}
+
+/* nav: the compressed bar, always */
+#nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;gap:clamp(14px,3vw,40px);padding:max(14px,env(safe-area-inset-top)) var(--pad) 14px;background:rgba(49,38,28,.94);color:var(--cr);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.brand{display:flex;align-items:center;font:400 clamp(20px,2.2vw,26px)/1 var(--d)}
+.bars{width:24px;height:24px;fill:currentColor}
+.mark{font-family:var(--d);font-weight:400;letter-spacing:.04em;display:inline-flex;align-items:center;gap:.04em;line-height:1}
+.mark .bars{display:inline-block;width:.62em;height:.62em;margin:0 .05em}
+.mark .bars svg{display:block;width:100%;height:100%}
+.bars path{fill:currentColor}
+.sub{font-family:var(--u);font-size:.26em;letter-spacing:.02em;line-height:1.1;margin-left:.5em;text-align:left;font-weight:300}
+#nav.h.sm .sub{display:none}#nav.h.sm .mark .bars{width:22px;height:22px}
+.big .mark{display:inline-flex;align-items:center;line-height:.62}
+
+.mid,.rt{display:flex;gap:clamp(14px,2.4vw,32px);align-items:center}
+.mid{margin-left:clamp(8px,3vw,48px)}.rt{margin-left:auto}
+.nl{position:relative;padding-bottom:6px;white-space:nowrap}
+.nl svg{position:absolute;left:0;bottom:0;width:100%;height:6px;overflow:visible}
+.nl path{fill:none;stroke:currentColor;stroke-width:1.1;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .24s ease-out}
+.nl:hover path,.nl:focus-visible path,.nl[aria-current=page] path{stroke-dashoffset:0}
+.sec{opacity:.65}.book{border-bottom:1px solid currentColor}
+.bg{display:none;width:28px;height:44px;margin-left:12px}.bg svg{width:24px;fill:currentColor}
+#mp{position:fixed;inset:0;z-index:49;background:var(--mo);color:var(--cr);padding:110px var(--pad) 40px;display:flex;flex-direction:column;gap:14px;transform:translateX(105%);visibility:hidden;transition:transform .3s var(--e),visibility 0s .3s}
+#mp::before{content:"";position:absolute;left:-23px;top:0;bottom:0;width:24px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 240'%3E%3Cpath d='M24 0H12C0 30 24 60 12 90S0 150 12 180 24 220 12 240H24Z' fill='%2331261C'/%3E%3C/svg%3E") repeat-y;background-size:24px 240px}
+#mp.o{transform:none;visibility:visible;transition:transform .3s var(--e)}
+#mp a{font:400 clamp(2rem,10vw,2.5rem)/1.2 var(--d);opacity:0;transform:translateY(10px);transition:opacity .3s,transform .3s var(--e)}
+#mp.o a{opacity:1;transform:none}
+#mp.o a:nth-child(2){transition-delay:.06s}#mp.o a:nth-child(3){transition-delay:.12s}#mp.o a:nth-child(4){transition-delay:.18s}#mp.o a:nth-child(5){transition-delay:.24s}#mp.o a:nth-child(6){transition-delay:.3s}#mp.o a:nth-child(7){transition-delay:.36s}
+#mp a.sm{font:300 14px var(--u)}#mp.o a.sm{opacity:.7}#mp a.btn{font:500 12px var(--u)}
+
+/* bands */
+.band{position:relative;padding:clamp(72px,12vh,140px) var(--pad)}
+.dk{background:var(--mo);color:var(--cr)}.cr{background:var(--cr)}
+.dk::before{content:"";position:absolute;left:0;right:0;top:-23px;height:24px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 24'%3E%3Cpath d='M0 24V12C30 0 60 0 90 12S150 24 180 12 210 2 240 12V24Z' fill='%2331261C'/%3E%3C/svg%3E") repeat-x;background-size:240px 24px}
+.wv{display:block;width:100%;height:30px;fill:none;stroke:currentColor;stroke-width:.75;opacity:.45;margin:28px 0}
+.wv path{vector-effect:non-scaling-stroke}
+
+/* shared bits */
+.lk{display:inline-flex;gap:8px;margin-top:26px;border-bottom:1px solid;padding-bottom:6px}
+.lk::after{content:"\2192";display:inline-block;transition:transform .2s var(--e)}
+.lk:hover::after{transform:translateX(12px)}
+.btn{display:inline-block;margin-top:26px;padding:14px 28px;border-radius:999px;background:var(--mo);color:var(--cr);font-weight:500;border:0}
+.dk .btn{background:var(--cr);color:var(--mo)}
+.ph{display:grid;place-items:end start;padding:16px;min-height:280px;background:radial-gradient(ellipse at 35% 25%,#d3c7b2,#a8977c);color:var(--mo);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+.dk .ph{background:radial-gradient(ellipse at 35% 25%,#4a3b2d,#241b13);color:var(--cr)}
+.st{width:120px;fill:none;stroke:currentColor;stroke-width:1}.st rect{fill:currentColor;stroke:0}
+
+/* menu */
+.mg{display:grid;grid-template-columns:200px 1fr;gap:clamp(24px,5vw,80px)}
+.rail{position:sticky;top:96px;align-self:start;display:flex;flex-direction:column;gap:10px}
+.rail a{font:400 15px var(--u);opacity:.4;transition:opacity .3s}.rail a.on{opacity:1}
+.ms{padding:70px 0 10px;scroll-margin-top:90px}
+.ml{list-style:none;padding:0}
+.mi{display:flex;justify-content:space-between;gap:20px;align-items:baseline;padding:18px 0;border-bottom:1px solid rgba(49,38,28,.18);transition:opacity .3s}
+.mi h3{font-size:28px}.mi p{font-size:14px;opacity:.7}.pr{opacity:.5}
+@media(hover:hover){.ml:hover .mi{opacity:.45}.ml .mi:hover{opacity:1}}
+#ov{position:fixed;left:0;top:0;width:190px;height:240px;border-radius:50%;z-index:40;pointer-events:none;opacity:0;transform:translate(-999px,0);transition:transform .18s linear,opacity .2s;background:radial-gradient(ellipse at 40% 30%,var(--cr),#b3a286);display:grid;place-items:center;text-align:center;padding:30px;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+#ov.o{opacity:1}
+
+/* story */
+.pin{height:250vh}
+.sticky{position:sticky;top:0;height:100vh;display:grid;grid-template-columns:1fr 40px 1fr;align-items:center;gap:24px;padding:0 var(--pad)}
+.sticky h1{max-width:none;font-size:clamp(2rem,4.4vw,4.2rem)}.sticky h1:first-child{text-align:right;justify-self:end}
+.sticky svg{height:70vh;width:40px;fill:none;stroke:var(--cr);stroke-width:1}
+.nr{display:flex;align-items:center;gap:clamp(20px,5vw,70px);padding:34px 0;border-top:1px solid rgba(49,38,28,.18)}
+.nr:nth-child(even){flex-direction:row-reverse;text-align:right}
+.nr h3{font-size:clamp(1.6rem,3vw,2.4rem);margin-bottom:6px}
+.pg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:40px}.pg .ph{min-height:320px}
+
+/* journal */
+.fl{display:flex;gap:26px;overflow-x:auto;margin:36px 0 50px;padding-bottom:4px}
+.fl button{position:relative;opacity:.5;padding-bottom:6px;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.fl button[aria-pressed=true]{opacity:1;border-bottom:1px solid}
+.je{display:block;padding:30px 0;border-top:1px solid rgba(49,38,28,.18)}
+.je h3{font-size:clamp(1.6rem,3vw,2rem);transition:transform .28s ease-out}
+.je.lead h3{font-size:clamp(2rem,4vw,3rem);margin-top:20px}
+.je .ph{width:min(100%,60vw);min-height:360px;transition:transform .28s ease-out}
+.je:hover h3{transform:translateX(6px)}.je:hover .ph{transform:translateX(-8px)}
+.je .lb{margin:0 0 8px}.je i{font-style:normal;display:inline-block;width:10px;height:1px;background:currentColor;margin-left:10px;vertical-align:middle;transition:width .28s}.je:hover i{width:24px}
+.je[hidden]{display:none}
+
+/* visit */
+.es{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.hr{display:flex;justify-content:space-between;opacity:.45;font-size:15px;padding:3px 0}.hr.t{opacity:1}
+.mp{min-height:360px;background:#d6cbb8;background-image:linear-gradient(115deg,transparent 48%,rgba(255,255,255,.7) 49% 51%,transparent 52%),linear-gradient(20deg,transparent 60%,rgba(255,255,255,.7) 61% 62%,transparent 63%)}
+
+/* the card: booking + inquiry stationery */
+.stage{background:var(--mo);padding:clamp(60px,10vh,110px) var(--pad);color:var(--cr)}
+.stage>h1,.stage>h2{text-align:center;margin-bottom:40px}
+.fp{perspective:1400px;max-width:560px;margin:auto}
+.in{display:grid;transition:transform .62s var(--e);transform-style:preserve-3d}
+.in.f{transform:rotateY(180deg)}
+.fc,.bc{grid-area:1/1;background:var(--cr);color:var(--mo);padding:clamp(24px,5vw,44px);backface-visibility:hidden;-webkit-backface-visibility:hidden;min-height:430px}
+.bc{background:var(--mo);color:var(--cr);outline:1px solid var(--cr);outline-offset:-10px;transform:rotateY(180deg);display:flex;flex-direction:column;justify-content:center;gap:10px}
+.fc>svg.pg2{display:block;width:100%;height:16px;fill:none;stroke:currentColor;stroke-width:1.2;margin-bottom:14px}
+.fc .bars{display:block;margin:0 auto 24px;width:30px;height:30px}
+.fc h3{margin-bottom:18px}
+.chs{display:flex;flex-wrap:wrap;gap:8px 10px}
+.chp{border:1px solid currentColor;border-radius:999px;padding:11px 16px;min-height:44px}
+.chp[aria-pressed=true]{background:var(--mo);color:var(--cr)}
+.chp:disabled{text-decoration:line-through;opacity:.4;cursor:default}
+.fd{display:grid;gap:6px;margin-bottom:18px;font-size:13px}
+.fd input:not([type=checkbox]),.fd select,.fd textarea{width:100%;background:none;border:0;border-bottom:1px solid rgba(49,38,28,.5);padding:10px 0;font-size:16px;border-radius:0}
+.fd input:focus,.fd select:focus,.fd textarea:focus{outline:0;border-color:var(--mo)}
+.fd.cb{display:flex;gap:10px;align-items:flex-start}.fd.cb input{margin-top:5px}
+.fd .xs{display:flex;flex-wrap:wrap;gap:8px 18px}.fd .xs label{display:flex;gap:6px}
+.er{font-size:13px;min-height:0}
+.fd.bad input:not([type=checkbox]),.fd.bad select,.fd.bad textarea{border-bottom:2px solid var(--mo)}
+.hp{position:absolute;left:-9999px}
+.nv{display:flex;justify-content:space-between;align-items:center;margin-top:24px}
+.nv .btn{margin:0}
+.fc .lk{margin:0}
+.bc h2{font-size:clamp(1.8rem,5vw,2.6rem)}
+.bl{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-top:26px}.bl .lk{margin:0;color:var(--cr)}
+
+/* partner */
+.sp2{display:grid;grid-template-columns:1fr 1fr;min-height:90vh;padding-top:64px}
+.sp2 .ph{min-height:420px}
+.sp2>div:last-child{padding:clamp(40px,8vw,110px) var(--pad);align-self:center}
+.sp2 h1{font-size:clamp(2.4rem,5.4vw,5.2rem);margin-bottom:22px}
+.pl{display:grid;grid-template-columns:1fr 1.4fr;gap:24px;padding:26px 0;border-top:1px solid rgba(49,38,28,.18)}
+.wd{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:40px;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.wh{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(24px,6vw,100px)}
+.wh p{padding:16px 0;border-bottom:1px solid rgba(226,217,201,.25);font-size:clamp(16px,1.4vw,19px)}
+.tl{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;margin-top:50px;position:relative;padding-top:34px}
+.tl::before{content:"";position:absolute;left:0;right:0;top:8px;height:1px;background:currentColor;opacity:.5}
+.tl h3{font-size:1.4rem;margin:8px 0}.tl p{font-size:14px;opacity:.75}
+
+/* footer */
+.ft{position:relative;overflow:hidden;padding-bottom:0}
+.ft h2{max-width:14ch;margin-bottom:50px}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:40px;font-size:14px}
+.fg a{display:block;opacity:.8}
+.nw{display:flex;gap:14px;border-bottom:1px solid;max-width:320px;margin-top:10px}.nw input{flex:1;background:none;border:0;padding:10px 0;outline:0}
+.fr{margin-top:60px;font-size:13px;opacity:.75}.fr a{border-bottom:1px solid;font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-left:6px}
+.big{font:400 28vw/.62 var(--d);letter-spacing:.04em;margin-top:30px;height:17vw;overflow:hidden;text-align:center;opacity:.9}
+
+@media(max-width:800px){
+ .mid,.sec{display:none}.bg{display:block}
+ .mg,.es,.wh,.pl,.sp2{grid-template-columns:1fr}
+ .rail{position:sticky;top:64px;z-index:5;flex-direction:row;overflow-x:auto;background:var(--pa);margin:0 calc(var(--pad)*-1);padding:12px var(--pad)}
+ .rail a{white-space:nowrap;min-height:44px;display:flex;align-items:center}.rail .sm{display:none}
+ .sticky{grid-template-columns:1fr;text-align:left;align-content:center}.sticky h1:first-child{text-align:left}.sticky svg{display:none}
+ .tl{grid-template-columns:1fr}.je .ph{width:100%}
+ .nr,.nr:nth-child(even){flex-direction:column;align-items:flex-start;text-align:left}
+}
+@media(prefers-reduced-motion:reduce){.in,.nl path,.je h3,.je .ph{transition:none}}
+/* home (scroll experience) */
+#c{position:fixed;inset:0;width:100%;height:100%;z-index:-1}
+body.dr{color:var(--cr)}
+#nav.h{background:transparent;color:var(--mo);-webkit-backdrop-filter:none;backdrop-filter:none;padding-top:max(22px,env(safe-area-inset-top));padding-bottom:18px;transition:padding .3s var(--e),background .3s,color .3s}
+body.dr #nav.h{color:var(--cr)}
+#nav.h.sm{background:rgba(49,38,28,.94);color:var(--cr);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);padding-top:max(12px,env(safe-area-inset-top));padding-bottom:12px}
+#nav.h.sm .word{display:none}
+.hm .ch{height:100vh;height:100svh;display:flex;align-items:center;padding:0 var(--pad);position:relative;z-index:2}
+.hm .ch.r{justify-content:flex-end}.hm .ch.dr{color:var(--cr)}
+.hm .txt{max-width:min(460px,100%)}
+.hm .lb{margin-bottom:18px}
+.hm h2{font-size:clamp(2.4rem,5.6vw,5.4rem);line-height:1.04;margin-bottom:20px}
+.hm .sp{max-width:34ch;opacity:.8;font-size:clamp(16px,1.3vw,18px)}
+.hm .hero .txt{max-width:none}
+.hm .hero h1{font-size:clamp(2.6rem,8vw,8.25rem);line-height:.96;margin-bottom:26px}
+.hm .fr{display:block;margin-top:40px}
+.dr .btn{background:var(--cr);color:var(--mo)}
+#bn{position:fixed;right:var(--pad);top:50%;transform:translateY(-55%);z-index:10;text-align:right;color:var(--cr);transition:opacity .26s;pointer-events:none}
+#bn.lft{right:auto;left:var(--pad);text-align:left}
+#bn b{display:block;font:400 clamp(110px,18vw,260px)/.85 var(--d);letter-spacing:-.03em;opacity:.92}
+#bn span{display:block;font:400 12px var(--u);letter-spacing:.14em;text-transform:uppercase;margin-top:14px;opacity:.8}
+#bn.out{opacity:0}
+@media(max-width:800px){#bn,#bn.lft{top:104px;transform:none;right:var(--pad);left:auto;text-align:right}#bn b{font-size:clamp(84px,26vw,130px)}}
+#cnt{position:fixed;left:var(--pad);bottom:max(26px,env(safe-area-inset-bottom));z-index:10;display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.12em}
+#cnt i{position:relative;width:100px;height:1px;overflow:hidden}
+#cnt i::before,#cnt b{content:"";position:absolute;inset:0;background:currentColor}
+#cnt i::before{opacity:.25}
+#cnt b{transform-origin:0 50%;transform:scaleX(0)}
+#tour{position:fixed;right:var(--pad);bottom:max(18px,env(safe-area-inset-bottom));z-index:10;display:flex;gap:6px}
+#tour button{min-height:36px;padding:0 14px;border:1px solid currentColor;border-radius:999px;background:none;color:inherit;font:400 11px var(--u);letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+#side{position:fixed;right:20px;top:50%;transform:translateY(-50%);writing-mode:vertical-rl;z-index:10;font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.6}
+#ld{position:fixed;inset:0;z-index:100;background:var(--pa);display:grid;place-items:center;transition:transform .55s var(--e)}
+#ld.out{transform:translateY(-100%)}
+#ld svg{display:block;width:84px;height:84px;margin:0 auto;fill:var(--mo)}
+#ld path{transform-box:fill-box;transform-origin:0 50%;animation:bar .5s var(--e) both}
+#ld path:nth-child(2){animation-delay:.15s}#ld path:nth-child(3){animation-delay:.3s}
+@keyframes bar{from{transform:scaleX(0)}}
+@media(max-width:800px){.hm .ch,.hm .ch.r{align-items:flex-end;justify-content:flex-start;padding-bottom:max(96px,calc(70px + env(safe-area-inset-bottom)))}#tour button{min-height:44px}#cnt i{width:56px}#side{display:none}}
+.bg rect{transform-box:fill-box;transform-origin:center;transition:transform .3s var(--e),opacity .3s}
+.bg[aria-expanded=true] rect:nth-child(1){transform:translateY(6px) rotate(45deg)}.bg[aria-expanded=true] rect:nth-child(2){opacity:0}.bg[aria-expanded=true] rect:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+.skip{position:absolute;left:-999px;top:8px;z-index:99;background:var(--cr);color:var(--mo);padding:10px 14px;font-size:14px}.skip:focus{left:12px}
+#app{outline:0;transition:opacity .2s,transform .2s var(--e)}#app.out{opacity:0;transform:translateY(-12px)}
+#tp{position:fixed;inset:0;z-index:90;background:var(--mo);color:var(--cr);display:grid;place-items:center;transform:translateX(105%);pointer-events:none}
+#tp::before{content:"";position:absolute;left:-23px;top:0;bottom:0;width:24px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 240'%3E%3Cpath d='M24 0H12C0 30 24 60 12 90S0 150 12 180 24 220 12 240H24Z' fill='%2331261C'/%3E%3C/svg%3E") repeat-y;background-size:24px 240px}
+#tp .bars{width:40px;height:40px}
+#tp.in{transform:none;transition:transform .16s var(--e)}#tp.out{transform:translateX(-105%);transition:transform .2s var(--e)}
+.mi{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Ccircle cx='6' cy='6' r='3' fill='%2331261C'/%3E%3C/svg%3E") 6 6,auto}
+.m1,.m2,.m3{display:inline-block;width:8px;height:8px;margin:0 6px 0 10px;vertical-align:middle;border:1px solid currentColor}.m1{border-radius:50%;background:currentColor}.m2{border-radius:50%}
+.sea{display:inline-block;margin-left:12px;font:400 11px var(--u);letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+.map{display:block;width:100%;height:100%;min-height:360px}
+.art{max-width:calc(640px + 2*var(--pad));margin:auto;padding-top:150px}
+.art h1{font-size:clamp(2.4rem,5vw,3.5rem);margin-bottom:20px}
+.stand{font-style:italic;opacity:.8}
+.art .body{font-size:19px;line-height:1.7;margin:24px 0}
+.brk{margin:40px -10%}@media(max-width:800px){.brk{margin:32px calc(var(--pad)*-1)}}.cap{font-size:13px;letter-spacing:.04em;text-transform:uppercase;opacity:.6}
+.pq{margin:50px 0}.pq p{font:400 clamp(1.6rem,3vw,2.25rem)/1.2 var(--d)}
+#rd{position:fixed;left:14px;top:90px;width:14px;height:calc(100vh - 150px);fill:none;stroke:currentColor;stroke-width:1;z-index:5;opacity:.6}
+@media(prefers-reduced-motion:reduce){.pin{height:auto}.sticky{position:static;height:auto;min-height:100vh}#mp,#mp a,#tp,#app,.bg rect{transition:none}}
+/* ===== v3: Barista-style components in SEVN's skin + Terra-style film ===== */
+.pic{position:relative;overflow:hidden;background:radial-gradient(ellipse at 35% 25%,#cbbfa8,#8f7d62)}
+.dk .pic,.hb .pic{background:radial-gradient(ellipse at 35% 25%,#4a3b2d,#241b13)}
+.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.sh{text-align:center;margin:0 auto 54px;max-width:780px}
+.sh i{display:block;font:italic 400 17px var(--d);opacity:.55;margin-bottom:10px}
+.sh h2{text-transform:uppercase;font-size:clamp(1.7rem,3.2vw,2.6rem);letter-spacing:.02em}
+.hb{position:relative;min-height:80vh;display:grid;place-items:center;text-align:center;color:var(--cr);padding:150px var(--pad) 110px;overflow:hidden}
+.hb>.pic{position:absolute;inset:0}
+.hb::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(25,17,10,.5),rgba(25,17,10,.68))}
+.hb>div:last-child{position:relative;z-index:2}
+.hb h1{text-transform:uppercase;font-size:clamp(2.4rem,6vw,5.4rem)}
+.hb .bdg{width:96px;height:96px;margin:0 auto 22px;display:block;fill:none;stroke:var(--cr);stroke-width:1}
+.hb .bdg text{fill:var(--cr);stroke:0;font:500 9.5px var(--u);letter-spacing:.18em}
+.hb .bdg rect{fill:var(--cr);stroke:0}
+.btn.ol,.dk .btn.ol,.hb .btn.ol{background:none;border:1px solid currentColor;color:inherit}
+.bar{display:grid;grid-template-columns:1.1fr auto 1.2fr auto 1fr auto;gap:12px;align-items:center;max-width:1000px;margin:0 auto 64px}
+.bar label{display:flex;background:rgba(255,255,255,.45);border:1px solid rgba(49,38,28,.25);padding:0 12px;min-height:48px}
+.bar select,.bar input{width:100%;background:none;border:0;outline:0;min-height:46px;font-size:15px}
+.bar b{font:500 12px var(--u);letter-spacing:.14em}
+.bar .btn{margin:0;white-space:nowrap}
+.c3,.bc3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.nc .pic,.bk .pic{aspect-ratio:4/3}
+.nc .nm{font:italic 400 clamp(2.4rem,4vw,3.2rem)/1 var(--d);opacity:.28;margin:16px 12px 0 0;display:inline-block}
+.nc h3,.bk h3,.fi h3,.pd h3{font:500 15px/1.3 var(--u);letter-spacing:.08em;text-transform:uppercase}
+.nc h3{display:inline-block}.nc p{margin:8px 0 14px;font-size:15px;opacity:.8}
+.ir{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;text-align:center;margin-top:80px}
+.ir .st{width:110px;margin:0 auto 14px}.ir h3{font-size:12px;letter-spacing:.16em}.ir p{font-size:14px;opacity:.75;margin-top:6px}
+.fv{display:grid;grid-template-columns:1fr 1fr;gap:26px 64px;max-width:1080px;margin:0 auto 50px}
+.fi{display:grid;grid-template-columns:64px 1fr auto;gap:16px;align-items:center}
+.fi .pic{width:64px;height:64px;border-radius:50%}.fi p{font-size:13px;opacity:.65;line-height:1.4}.fi .pr2{font:500 16px var(--u)}
+.tag{font:500 10px var(--u);letter-spacing:.1em;text-transform:uppercase;border:1px solid currentColor;padding:1px 6px;margin-left:8px;vertical-align:middle}
+.pd{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.pd .pic{aspect-ratio:1}.pd h3{margin:14px 0 4px}.pd .st5{font-size:12px;letter-spacing:.2em;opacity:.7}.pd s{opacity:.5;margin-right:8px}
+.ms2{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:10px}
+.ms2 .pic:nth-child(1){grid-column:span 2;grid-row:span 2}.ms2 .pic:nth-child(4){grid-row:span 2}.ms2 .pic:nth-child(6){grid-column:span 2}
+.ms2 figcaption{position:absolute;left:12px;bottom:10px;z-index:2;color:#fff;font:400 12px var(--u);letter-spacing:.06em;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.ms2 .pic::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(0,0,0,.45))}
+.cb{display:grid;grid-template-columns:1.1fr 1fr;min-height:380px}
+.cb>div:first-child{background:var(--mo);color:var(--cr);padding:clamp(30px,5vw,70px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.cb h2{text-transform:uppercase;font-size:clamp(1.8rem,3.4vw,2.8rem);margin-bottom:14px}
+.bk.je{border:0;padding:0}.bk .mt{font-size:12px;opacity:.55;margin:8px 0}.bk h3{margin:14px 0 6px}.bk p{font-size:14px;opacity:.8}
+.bk:hover h3{transform:translateX(6px)}.bk:hover .pic{transform:none}
+.pgs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}.pgs .pic{aspect-ratio:3/4}
+.pgs figcaption{font:400 12px var(--u);letter-spacing:.12em;text-transform:uppercase;margin-top:10px;opacity:.8}
+.f4{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;font-size:14px;margin-top:70px;padding-top:50px;border-top:1px solid rgba(226,217,201,.25)}
+.f4 h4{font:500 12px var(--u);letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+.f4 .hh{display:flex;justify-content:space-between;gap:12px;opacity:.8;padding:4px 0;border-bottom:1px solid rgba(226,217,201,.12)}
+.f4 a,.f4 p{display:block;opacity:.85;padding:3px 0;margin:0}
+#bt{position:fixed;right:20px;bottom:24px;z-index:30;width:44px;height:44px;background:var(--mo);color:var(--cr);display:grid;place-items:center;opacity:0;pointer-events:none;transition:opacity .3s;border:1px solid rgba(226,217,201,.3)}
+#bt.o{opacity:1;pointer-events:auto}#bt svg{width:16px;fill:none;stroke:currentColor;stroke-width:1.5}
+body[data-p=home] #bt{display:none}
+#ld p{font:400 11px var(--u);letter-spacing:.22em;text-transform:uppercase;margin-top:26px;color:var(--mo);text-align:left}
+#ld p i{font-style:normal;animation:bl 1.2s infinite both}#ld p i:nth-child(2){animation-delay:.2s}#ld p i:nth-child(3){animation-delay:.4s}
+@keyframes bl{0%,100%{opacity:.2}50%{opacity:1}}
+.vmap{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:900px){.c3,.bc3,.pd,.ir,.f4,.pgs{grid-template-columns:1fr 1fr}.cb,.vmap{grid-template-columns:1fr}.fv{grid-template-columns:1fr}.bar{grid-template-columns:1fr}.bar b{display:none}.ms2{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.ms2 .pic:nth-child(n){grid-column:auto;grid-row:auto}.ms2 .pic:nth-child(1){grid-column:span 2}}
+@media(max-width:560px){.c3,.bc3,.pd,.ir,.f4,.pgs{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){#ld p i{animation:none}}
+.sp2>.pic{min-height:420px}
+</style>
+</head>
+<body>
+<a class="skip" href="#" data-sc="app">Skip to content</a>
+<header id="nav">
+  <a class="brand" href="#/" id="home" aria-label="SEVN home"><span class="mark"><span class="word">S</span><span class="bars"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.6c6-.7 12-.7 18 0v2.1c-6-.6-12-.6-18 0z"/><path d="M4.4 11c5.1.7 10.1.7 15.2 0v2c-5.1-.6-10.1-.6-15.2 0z"/><path d="M3 16.3c6-.6 12-.6 18 0v2.1c-6-.7-12-.7-18 0z"/></svg></span><span class="word">VN</span><span class="sub">Cafe &amp;<br>Bakehaus</span></span></a>
+  <nav class="mid" aria-label="Primary"></nav>
+  <div class="rt"></div>
+  <button class="bg" id="bg" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect y="5" width="24" height="2.5"/><rect y="11" width="18" height="2.5"/><rect y="17" width="22" height="2.5"/></svg></button>
+</header>
+<div id="mp"></div>
+<main id="app" tabindex="-1"></main>
+
+<script>
+(()=>{
+const $=(q,e=document)=>e.querySelector(q),$$=(q,e=document)=>[...e.querySelectorAll(q)];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches,sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const BARS='<svg class="bars" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.6c6-.7 12-.7 18 0v2.1c-6-.6-12-.6-18 0z"/><path d="M4.4 11c5.1.7 10.1.7 15.2 0v2c-5.1-.6-10.1-.6-15.2 0z"/><path d="M3 16.3c6-.6 12-.6 18 0v2.1c-6-.7-12-.7-18 0z"/></svg>';
+const WV=n=>'<svg class="wv" viewBox="0 0 400 30" preserveAspectRatio="none" aria-hidden="true">'+[...Array(n||7)].map((_,j)=>`<path d="M0 ${12+j*1.2}C50 ${j*1.2-2} 100 ${24+j} 150 ${14+j}S250 ${j} 300 ${14+j*.5}S370 22 400 ${12+j}"/>`).join('')+'</svg>';
+const WAVE='<svg viewBox="0 0 100 6" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M0 3C8 0 17 0 25 3S42 6 50 3 67 0 75 3 92 6 100 3"/></svg>';
+const L=(t,h)=>`<a class="lk" href="${h||'#'}">${t}</a>`;
+const ROUTES=[['menu','Menu'],['story','Our Story'],['journal','Journal'],['visit','Visit']];
+$('.mid').innerHTML=ROUTES.map(r=>`<a class="nl" data-r="${r[0]}" href="#/${r[0]}">${r[1]}${WAVE}</a>`).join('');
+$('.rt').innerHTML=`<a class="nl sec" data-r="partner" href="#/partner">Partner With SEVN${WAVE}</a><a class="nl book" data-r="book" href="#/book">Book a Table</a>`;
+$('#mp').innerHTML='<a href="#/">Home</a>'+ROUTES.map(r=>`<a href="#/${r[0]}">${r[1]}</a>`).join('')+'<a class="sm" href="#/partner">Partner With SEVN</a><a class="btn" href="#/book" style="align-self:flex-start">Book a table</a>';
+$('#bg').onclick=()=>{const o=$('#mp').classList.toggle('o');$('#bg').setAttribute('aria-expanded',o)};
+
+/* ---------- data ---------- */
+const MENU=[
+['Coffee','Quiet Morning Ritual',['Espresso','Americano','Cappuccino','Flat White','Spanish Latte']],
+['Signatures','Bold Opening Ritual',['Date & Cardamom Latte','Saffron Latte','Pistachio Spanish Latte','Honey Cinnamon Latte','Ceremonial Matcha']],
+['Iced & Refreshers','Deep Notes Slow Melts',['Iced Americano','Iced Latte','Cold Brew Reserve','Lemon Mint Cooler','Hibiscus Iced Tea']],
+['Pastries','Golden Layers in Rhythm',['Butter Croissant','Turkey & Cheese Croissant']],
+['Toasts & Sourdough','Fresh Layers in Balance',[['Truffle Mushroom Sourdough','Sautéed mushroom / truffle cream / parmesan / toasted sourdough'],'Avocado Toast']],
+['Kitchen','Stack Bold & Balanced Right',['Mediterranean Chicken Sandwich','Chicken Pesto Sandwich']],
+['Sweets','Soft Crumbs Sweet Finish',['Burnt Basque Cheesecake','Classic Tiramisu','Date Cake','Chocolate Brownie']]];
+const NOTES=[['Quiet Morning Ritual','The first hour belongs to whoever gets here first.'],['Bold Opening Ritual','Every day starts with an espresso pulled properly.'],['Golden Layers in Rhythm','Croissants at seven. Again at eleven. Not a minute before.'],['Fresh Layers in Balance',"Nothing goes on the plate that isn't doing something."],['Deep Notes Slow Melts',"Cold brew steeped eighteen hours, because sixteen isn't enough."],['Stack Bold & Balanced Right','Built to be finished with both hands.'],['Soft Crumbs Sweet Finish','The end of a meal is still part of the meal.']];
+const JN=[['Places','The case for a slower morning','12 Sep 2026','Ananya Rao','Why the first hour of the day deserves a table of its own.','photo-1495474472287-4d71bcdd2085'],['Coffee','Eighteen hours, and why not sixteen','19 Sep 2026','Kabir Shah','On steeping, patience and a cold brew that refuses to hurry.','photo-1556679343-c7306c1976bc'],['Baking','What changes in the pastry when the weather does','26 Sep 2026','Meera Iyer','Butter, humidity and the small adjustments of a bakehaus.','photo-1509440159596-0249088772ff'],['People','The table by the window has regulars','03 Oct 2026','Rohan Desai','Meet the people who made one table their own.','photo-1521017432531-fbd92d768814'],['Coffee','Saffron is not a garnish','07 Oct 2026','Isha Nair','How a few threads change a whole cup.','photo-1498804103079-a6351b050096']];
+const RANGES=[];   // INVESTMENT_RANGES: ships empty until SEVN supplies bands; field is hidden while empty
+const LIVE=false;  // set true to POST to /api/franchise-inquiry
+const SLOTS=['07:30','08:00','08:30','09:00','10:00','11:00','12:30','13:00','14:30','16:00','17:30','19:00'];
+const MOODS=[
+ ['Quiet Morning Ritual','A quiet morning','The room is still yours for another hour.'],
+ ['Bold Opening Ritual','Something bold','Start with the espresso. Decide after.'],
+ ['Golden Layers in Rhythm','Warm from the oven','Croissants come out at seven. And again at eleven.'],
+ ['Fresh Layers in Balance','A proper lunch','Sourdough, truffle, parmesan. Sit down for it.'],
+ ['Stack Bold & Balanced Right','Slow and full','Built to be finished with both hands.'],
+ ['Soft Crumbs Sweet Finish','Something sweet','Basque cheesecake. No further questions.'],
+ ['Deep Notes Slow Melts','Staying a while','We saved you the corner table.']];
+const HDK=[0,0,1,0,0,1,0,0,1];   // which rooms are mocha (about a third)
+const VEG=['Butter Croissant','Avocado Toast','Truffle Mushroom Sourdough','Burnt Basque Cheesecake','Classic Tiramisu','Date Cake','Chocolate Brownie'],VGN=['Espresso','Americano','Iced Americano','Lemon Mint Cooler','Hibiscus Iced Tea'],NUT=['Pistachio Spanish Latte','Date Cake','Chocolate Brownie'],SEASONAL=['Pistachio Spanish Latte','Date Cake'],BREAKFAST=['Butter Croissant','Avocado Toast','Truffle Mushroom Sourdough'];   // sample menu data
+const MK=n=>(VEG.includes(n)?'<i class="m1" title="Vegetarian"></i>':'')+(VGN.includes(n)?'<i class="m2" title="Vegan"></i>':'')+(NUT.includes(n)?'<i class="m3" title="Contains nuts"></i>':'')+(SEASONAL.includes(n)?'<span class="sea">✦ Seasonal</span>':'')+(BREAKFAST.includes(n)?'<span class="sea">Served until 11:30</span>':'');
+const SLUG=t=>t.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const DESCS={'Espresso':'A short, rich double shot.','Americano':'Espresso softened with hot water.','Cappuccino':'Double espresso, steamed milk and fine foam.','Flat White':'Velvety milk over a balanced double shot.','Spanish Latte':'Espresso, milk and a gentle sweetness.','Date & Cardamom Latte':'A warm house latte with date and cardamom notes.','Saffron Latte':'Milk, espresso and a delicate saffron finish.','Pistachio Spanish Latte':'Creamy espresso with pistachio sweetness.','Honey Cinnamon Latte':'A mellow latte finished with honey and cinnamon.','Ceremonial Matcha':'Whisked matcha with your choice of milk.','Iced Americano':'Espresso poured over ice and water.','Iced Latte':'Chilled espresso and milk over ice.','Cold Brew Reserve':'Slow-steeped coffee served chilled.','Lemon Mint Cooler':'Fresh lemon, mint and sparkling water.','Hibiscus Iced Tea':'Tart hibiscus tea served over ice.','Butter Croissant':'Laminated pastry, baked until crisp and golden.','Turkey & Cheese Croissant':'Warm croissant with turkey and melted cheese.','Truffle Mushroom Sourdough':'Sautéed mushrooms, truffle cream, parmesan and toasted sourdough.','Avocado Toast':'Avocado, lemon and herbs on toasted sourdough.','Mediterranean Chicken Sandwich':'Grilled chicken, greens and a bright herb dressing.','Chicken Pesto Sandwich':'Chicken, basil pesto and greens on toasted bread.','Burnt Basque Cheesecake':'Creamy centre and a deeply caramelised top.','Classic Tiramisu':'Coffee-soaked layers and mascarpone cream.','Date Cake':'Soft date cake with warm spice.','Chocolate Brownie':'A rich cocoa brownie with a fudgy centre.'};
+const DISH_PHOTOS={
+ 'Espresso':'photo-1510707577719-ae7c14805e3a',
+ 'Americano':'photo-1517701550927-30cf4ba1dba5',
+ 'Cappuccino':'photo-1570968915860-54d5c301fa9f',
+ 'Flat White':'photo-1461023058943-07fcbe16d735',
+ 'Spanish Latte':'photo-1495474472287-4d71bcdd2085',
+ 'Date & Cardamom Latte':'photo-1509042239860-f550ce710b93',
+ 'Saffron Latte':'photo-1498804103079-a6351b050096',
+ 'Pistachio Spanish Latte':'photo-1445116572660-236099ec97a0',
+ 'Honey Cinnamon Latte':'photo-1509042239860-f550ce710b93',
+ 'Ceremonial Matcha':'photo-1515823064-d6e0c04616a7',
+ 'Iced Americano':'photo-1517701550927-30cf4ba1dba5',
+ 'Iced Latte':'photo-1461023058943-07fcbe16d735',
+ 'Cold Brew Reserve':'photo-1556679343-c7306c1976bc',
+ 'Lemon Mint Cooler':'photo-1556679343-c7306c1976bc',
+ 'Hibiscus Iced Tea':'photo-1556679343-c7306c1976bc',
+ 'Butter Croissant':'photo-1623334044303-241021148842',
+ 'Turkey & Cheese Croissant':'photo-1555507036-ab1f4038808a',
+ 'Truffle Mushroom Sourdough':'photo-1525351484163-7529414344d8',
+ 'Avocado Toast':'photo-1525351484163-7529414344d8',
+ 'Mediterranean Chicken Sandwich':'photo-1528735602780-2552fd46c7af',
+ 'Chicken Pesto Sandwich':'photo-1528735602780-2552fd46c7af',
+ 'Burnt Basque Cheesecake':'photo-1759303380841-55c09244fd2b',
+ 'Classic Tiramisu':'photo-1571877227200-a0d98ea607e9',
+ 'Date Cake':'photo-1606313564200-e75d5e30476c',
+ 'Chocolate Brownie':'photo-1606313564200-e75d5e30476c'
+};
+
+const PH=id=>/^(https?:|data:)/.test(id)?id:`https://images.unsplash.com/${id}?auto=format&fit=crop&w=1200&q=80`;
+window.imgFail=i=>{i.onerror=null;if(i.dataset.fb){i.src=i.dataset.fb;return}i.style.display='none'};   // fallback: the gradient behind every picture stays visible
+const IMG=(id,alt,fb)=>`<img src="${PH(id)}" alt="${esc(alt)}" loading="lazy"${fb?` data-fb="${fb}"`:''} onerror="imgFail(this)">`;
+const PIC=(id,alt,cls,fb)=>`<div class="pic${cls?' '+cls:''}">${IMG(id,alt,fb)}</div>`;
+const dishId=n=>DISH_PHOTOS[n]||'photo-1495474472287-4d71bcdd2085';
+const PRICES={'Espresso':160,'Americano':180,'Cappuccino':220,'Flat White':230,'Spanish Latte':260,'Date & Cardamom Latte':280,'Saffron Latte':320,'Pistachio Spanish Latte':310,'Honey Cinnamon Latte':270,'Ceremonial Matcha':300,'Iced Americano':190,'Iced Latte':240,'Cold Brew Reserve':280,'Lemon Mint Cooler':210,'Hibiscus Iced Tea':200,'Butter Croissant':180,'Turkey & Cheese Croissant':320,'Truffle Mushroom Sourdough':450,'Avocado Toast':380,'Mediterranean Chicken Sandwich':420,'Chicken Pesto Sandwich':410,'Burnt Basque Cheesecake':360,'Classic Tiramisu':340,'Date Cake':280,'Chocolate Brownie':220};   // sample prices (INR)
+const rs=n=>PRICES[n]?'₹'+PRICES[n]:'';
+const HOURS=[['Monday','07:00','22:00'],['Tuesday','07:00','22:00'],['Wednesday','07:00','22:00'],['Thursday','07:00','22:00'],['Friday','07:00','23:00'],['Saturday','08:00','23:00'],['Sunday','08:00','21:00']];
+const SHOP={addr:'Bandra Bandstand, Bandra West, Mumbai 400050',phone:'+91 22 4000 0707',mail:'hello@sevn.cafe',ig:'@sevn.cafe'};
+const FILMPICS=['photo-1442512595331-e89e73853f31','photo-1495474472287-4d71bcdd2085','photo-1510707577719-ae7c14805e3a','photo-1509440159596-0249088772ff','photo-1589367920969-ab8e050bbb04','photo-1504754524776-8f4f37790ca0','photo-1571877227200-a0d98ea607e9','photo-1556679343-c7306c1976bc','photo-1554118811-1e0d58224f24'];
+const FAV=['Spanish Latte','Date & Cardamom Latte','Saffron Latte','Pistachio Spanish Latte','Honey Cinnamon Latte','Ceremonial Matcha','Cold Brew Reserve','Lemon Mint Cooler','Butter Croissant','Truffle Mushroom Sourdough','Burnt Basque Cheesecake','Classic Tiramisu'];
+const BADGE='<svg class="bdg" viewBox="0 0 96 96" aria-hidden="true"><defs><path id="bgp" d="M48 48m-37 0a37 37 0 1 1 74 0a37 37 0 1 1-74 0"/></defs><circle cx="48" cy="48" r="46"/><circle cx="48" cy="48" r="27"/><text><textPath href="#bgp">SEVN · CAFÉ &amp; BAKEHAUS · SEVEN NOTES ·</textPath></text><g transform="translate(33 33) scale(1.25)"><path d="M3 5.6c6-.7 12-.7 18 0v2.1c-6-.6-12-.6-18 0z"/><path d="M4.4 11c5.1.7 10.1.7 15.2 0v2c-5.1-.6-10.1-.6-15.2 0z"/><path d="M3 16.3c6-.6 12-.6 18 0v2.1c-6-.7-12-.7-18 0z"/></g></svg>';
+const todayISO=()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')};
+const BAR=()=>`<form class="bar" id="bkbar" aria-label="Quick booking"><label><select aria-label="Guests">${[1,2,3,4,5,6,7,8].map(n=>`<option value="${n}"${n==2?' selected':''}>${n} ${n>1?'People':'Person'}</option>`).join('')}</select></label><b>FOR</b><label><input type="date" aria-label="Date" value="${todayISO()}"></label><b>AT</b><label><select aria-label="Time">${SLOTS.map(t=>`<option>${t}</option>`).join('')}</select></label><button class="btn">Book a table</button></form>`;
+const STARS=n=>'★'.repeat(n)+'☆'.repeat(5-n);
+const STAMP='<svg class="st" viewBox="0 0 120 90" aria-hidden="true"><ellipse cx="60" cy="45" rx="57" ry="42"/><ellipse cx="60" cy="45" rx="47" ry="32"/><g transform="translate(42 27) scale(1.5)" style="fill:currentColor;stroke:none"><path d="M3 5.6c6-.7 12-.7 18 0v2.1c-6-.6-12-.6-18 0z"/><path d="M4.4 11c5.1.7 10.1.7 15.2 0v2c-5.1-.6-10.1-.6-15.2 0z"/><path d="M3 16.3c6-.6 12-.6 18 0v2.1c-6-.7-12-.7-18 0z"/></g></svg>';
+
+/* ---------- footer ---------- */
+const F=()=>`<footer class="band dk ft"><div class="wrap"><h2>What would you come back for?</h2><p class="body" style="margin-top:14px">The door is open from seven.</p><a class="btn" href="#/book">Book a table</a>
+<div class="f4"><div><h4>Opening hours</h4>${HOURS.map(h=>`<div class="hh"><span>${h[0].slice(0,3)}</span><span>${h[1]} – ${h[2]}</span></div>`).join('')}</div>
+<div><h4>Latest posts</h4>${JN.slice(0,3).map(j=>`<a href="#/journal/${SLUG(j[1])}">${j[1]}<br><span class="sm" style="margin:0">${j[2]}</span></a>`).join('')}</div>
+<div><h4>Contact us</h4><p>${SHOP.addr}</p><a href="tel:${SHOP.phone.replace(/\s/g,'')}">${SHOP.phone}</a><a href="mailto:${SHOP.mail}">${SHOP.mail}</a><a href="#">Instagram ${SHOP.ig}</a><form id="nl" class="nw"><input type="email" required placeholder="Your email" aria-label="Your email"><button class="lk" style="margin:0;border:0">Join</button></form><p id="nlm" class="sm" aria-live="polite"></p></div>
+<div><h4>Other locations</h4><p><b>SEVN Powai</b><br>Hiranandani Gardens, Powai, Mumbai 400076</p><p style="margin-top:12px"><b>SEVN Thane</b><br>Viviana Mall Road, Thane West 400601</p><h4 style="margin-top:22px">Explore</h4><a href="#/menu">Menu</a><a href="#/story">Our Story</a><a href="#/journal">Journal</a><a href="#/visit">Visit</a></div></div>
+<p class="fr">Interested in bringing SEVN to your city? <a href="#/partner">Franchise inquiries</a></p><div class="big" aria-hidden="true"><span class="mark"><span class="word">S</span><span class="bars"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.6c6-.7 12-.7 18 0v2.1c-6-.6-12-.6-18 0z"/><path d="M4.4 11c5.1.7 10.1.7 15.2 0v2c-5.1-.6-10.1-.6-15.2 0z"/><path d="M3 16.3c6-.6 12-.6 18 0v2.1c-6-.7-12-.7-18 0z"/></svg></span><span class="word">VN</span></span></div></div></footer><button id="bt" aria-label="Back to top"><svg viewBox="0 0 16 16"><path d="M2 11l6-6 6 6"/></svg></button>`;
+
+/* ---------- pages ---------- */
+const P={};
+const FEAT=n=>`<div class="fi"><div class="pic">${IMG(dishId(n),n)}</div><div><h3>${esc(n)}${n==='Saffron Latte'||n==='Pistachio Spanish Latte'?'<span class="tag">New</span>':''}</h3><p>${esc(DESCS[n]||'')}</p></div><span class="pr2">${rs(n)}</span></div>`;
+const MUG_SVG=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ebe3d4"/><stop offset="1" stop-color="#cbbda5"/></linearGradient><linearGradient id="bd" x1="0" x2="1"><stop offset="0" stop-color="#e2d9c9"/><stop offset=".35" stop-color="#f6f0e6"/><stop offset="1" stop-color="#cfc3ae"/></linearGradient></defs><rect width="400" height="400" fill="url(#bg)"/><ellipse cx="195" cy="318" rx="115" ry="16" fill="#31261C" opacity=".18"/><path d="M268 178Q338 176 338 228Q338 276 262 272" fill="none" stroke="#cfc3ae" stroke-width="24" stroke-linecap="round"/><path d="M268 178Q338 176 338 228Q338 276 262 272" fill="none" stroke="#f1eadf" stroke-width="14" stroke-linecap="round"/><path d="M108 132H282V268Q282 312 238 312H152Q108 312 108 268Z" fill="url(#bd)"/><ellipse cx="195" cy="132" rx="87" ry="15" fill="#d6cab4"/><ellipse cx="195" cy="133" rx="76" ry="10" fill="#4a3829"/><g fill="#31261C"><rect x="163" y="196" width="64" height="8"/><rect x="163" y="214" width="44" height="8"/><rect x="163" y="232" width="56" height="8"/></g></svg>`;
+const MUG='data:image/svg+xml;utf8,'+encodeURIComponent(MUG_SVG);
+const PRODUCTS=[['House Blend, 250g bag','photo-1559056199-641a0ac8b55e',650,0,5],['Cold Brew Reserve, 1L','photo-1556679343-c7306c1976bc',520,0,4],['SEVN Ceramic Mug','photo-1617902206819-ec9955c8fa44',750,600,5,MUG],['Sourdough Loaf','photo-1589367920969-ab8e050bbb04',320,0,4]];
+P.menu=()=>`<section class="hb"><div class="pic">${IMG('photo-1442512595331-e89e73853f31','Morning light across the café tables')}</div><div>${BADGE}<h1>The menu</h1><p class="body" style="margin:14px auto 0;opacity:.9">Seven notes. Everything on the counter belongs to one of them.</p><a class="btn ol" href="#" data-sc="full">Read the full menu</a></div></section>
+<section class="band dk"><div class="sh"><i>What happens here</i><h2>Favourite coffee flavours.</h2></div><div class="fv">${FAV.map(FEAT).join('')}</div><div style="text-align:center"><a class="btn" href="#" data-sc="full">View full menu</a></div></section>
+<section class="band" id="full"><div class="wrap mg"><nav class="rail" aria-label="Menu sections">${MENU.map((m,i)=>`<a href="#/menu" data-sc="s${i}"${i?'':' class="on"'}>${m[0]}</a>`).join('')}<p class="sm"><i class="m1"></i>vegetarian <i class="m2"></i>vegan <i class="m3"></i>contains nuts</p></nav><div><h2 style="margin-bottom:10px">The full menu.</h2>${MENU.map((m,i)=>`<section id="s${i}" class="ms"><p class="lb">${m[1]}</p><h2>${esc(m[0])}</h2><ul class="ml">${m[2].map(x=>{x=typeof x=='string'?[x,'']:x;const d=x[1]||DESCS[x[0]]||'';return`<li class="mi" data-n="${esc(x[0])}"><div><h3>${esc(x[0])}${MK(x[0])}</h3>${d?`<p>${esc(d)}</p>`:''}</div><span class="pr">${rs(x[0])}</span></li>`}).join('')}</ul></section>`).join('')}<a class="lk" href="#">Download menu (PDF)</a></div></div></section>
+<section class="band cr"><div class="sh"><i>Take it home</i><h2>From the bakehaus.</h2></div><div class="pd">${PRODUCTS.map(p=>`<div>${PIC(p[1],p[0],'',p[5])}<h3>${p[0]}</h3><div class="st5" aria-label="${p[4]} out of 5">${STARS(p[4])}</div><p>${p[3]?`<s>₹${p[2]}</s>₹${p[3]}`:'₹'+p[2]}</p></div>`).join('')}</div></section><div id="ov" class="pic"></div>`;
+
+const DAY=[['07:02','The first pour.','photo-1510707577719-ae7c14805e3a'],['09:20','The usual table, the usual order.','photo-1495474472287-4d71bcdd2085'],['11:00','Croissants, again.','photo-1509440159596-0249088772ff'],['12:36','Lunch takes as long as it takes.','photo-1525351484163-7529414344d8'],['16:18','One more, then.','photo-1461023058943-07fcbe16d735'],['19:40','The last tray comes out of the oven.','photo-1555507036-ab1f4038808a']];
+P.story=()=>`<section class="hb"><div class="pic">${IMG('photo-1555507036-ab1f4038808a','The bakehaus at five in the morning')}</div><div>${BADGE}<h1>Our story</h1><p class="body" style="margin:14px auto 0;opacity:.9">Rooted in craftsmanship. Guided by simplicity.</p><a class="btn ol" href="#/menu">See the menu</a></div></section>
+<div class="pin"><div class="sticky dk"><h1>Rooted in craftsmanship.</h1><svg viewBox="0 0 40 400" preserveAspectRatio="none" aria-hidden="true"><path id="vl" pathLength="1" d="M20 0C40 50 0 100 20 150S40 250 20 300 0 350 20 400"/></svg><h1>Guided by simplicity.</h1></div></div>
+<section class="band"><div class="wrap" style="display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(24px,6vw,100px)" id="why"><div><p class="lb">Why SEVN exists</p><p class="body">SEVN began with a simple idea: a room that opens early and stays kind all day. A bakehaus at the back, a bar at the front, and a menu built around seven notes, from the first quiet cup to the last soft crumb. We bake at five, pull the first espresso properly, and leave the door open from seven. Nothing is rushed here, and nothing is on the plate unless it is doing something.</p></div>${PIC('photo-1555507036-ab1f4038808a','The bakehaus at five in the morning')}</div></section>
+<section class="band cr"><div class="sh"><i>What happens here</i><h2>Everything begins at seven.</h2></div>${BAR()}<div class="c3">${[['The bakehaus','Dough is shaped by hand while the street is still dark.','photo-1509440159596-0249088772ff'],['The coffee','Every day starts with an espresso pulled properly.','photo-1510707577719-ae7c14805e3a'],['The room','Soft light, quiet corners and a table that waits for you.','photo-1554118811-1e0d58224f24']].map((c,i)=>`<div class="nc">${PIC(c[2],c[0])}<span class="nm">0${i+1}</span><h3>${c[0]}</h3><p>${c[1]}</p><a class="lk" style="margin-top:0" href="#/menu">Read more</a></div>`).join('')}</div>
+<div class="ir">${NOTES.slice(0,4).map(n=>`<div>${STAMP}<h3>${esc(n[0])}</h3><p>${esc(n[1])}</p></div>`).join('')}</div></section>
+<section class="band"><div class="wrap"><h2 style="margin-bottom:40px">Seven notes. One place.</h2>${NOTES.map(n=>`<div class="nr">${STAMP}<div><h3>${esc(n[0])}</h3><p class="body">${esc(n[1])}</p></div></div>`).join('')}</div></section>
+<section class="band dk"><div class="sh"><i>A day at SEVN</i><h2>From the first pour to the last tray.</h2></div><div class="ms2">${DAY.map(d=>`<figure class="pic" style="margin:0">${IMG(d[2],d[1])}<figcaption>${d[0]} — ${d[1]}</figcaption></figure>`).join('')}</div></section>
+<section class="cb"><div><h2>Try the best bakehaus in the city</h2><p class="body" style="opacity:.8">Croissants at seven. Again at eleven. Sit down for it.</p><a class="btn" href="#/book">Book a table</a></div>${PIC('photo-1521017432531-fbd92d768814','Friends sharing a table')}</section>
+<section class="band"><div class="wrap"><h2>The people.</h2><div class="pgs">${[['Aarav','Head barista','photo-1521017432531-fbd92d768814'],['Meera','Head baker','photo-1555507036-ab1f4038808a'],['Kabir','Front of house','photo-1554118811-1e0d58224f24'],['Isha','Pastry','photo-1509440159596-0249088772ff']].map(p=>`<figure style="margin:0">${PIC(p[2],p[0]+', '+p[1])}<figcaption>${p[0]}, ${p[1]}</figcaption></figure>`).join('')}</div></div></section>
+<section class="band cr"><div class="wrap"><h2>The door is open from seven.</h2>${L('See the menu','#/menu')} &nbsp; ${L('Book a table','#/book')}</div></section>`;
+
+P.journal=()=>`<section class="band" style="padding-top:150px"><div class="wrap"><h1 style="font-size:clamp(3rem,12vw,9rem);text-transform:uppercase">Journal</h1><p class="body">Notes from the bakehaus.</p><div class="fl" role="group" aria-label="Filter">${['All','Coffee','Baking','People','Places'].map((c,i)=>`<button data-f="${c}" aria-pressed="${!i}">${c}</button>`).join('')}</div>
+<div class="sh" style="margin-bottom:34px"><i>What happens here</i><h2>Read our latest news.</h2></div>
+<div class="bc3">${JN.slice(0,3).map(j=>`<a class="je bk" href="#/journal/${SLUG(j[1])}" data-c="${j[0]}">${PIC(j[5],j[1])}<h3>${j[1]}<i></i></h3><div class="mt">by ${j[3]} / ${j[0]} / ${j[2]}</div><p>${j[4]}</p><span class="lk" style="margin-top:12px">Read more</span></a>`).join('')}</div>
+<div style="margin-top:50px">${JN.slice(3).map(j=>`<a class="je" href="#/journal/${SLUG(j[1])}" data-c="${j[0]}"><p class="lb">${j[0]} / ${j[2]}</p><h3>${j[1]}<i></i></h3><p class="sm" style="margin-top:8px">${j[4]}</p></a>`).join('')}</div>${L('Book a table','#/book')}</div></section>`;
+
+P.visit=()=>`<section class="hb" style="min-height:70vh"><div class="pic">${IMG('photo-1559925393-8be0ec4767c8','The SEVN frontage with the blade sign lit')}</div><div>${BADGE}<h1 style="max-width:14ch;margin:auto">Come for the coffee. Stay for the hour after it.</h1></div></section>
+<section class="band cr"><div class="sh"><i>What happens here</i><h2>Find your table.</h2></div>${BAR()}</section>
+<section class="band dk"><div class="wrap es"><div><p class="lb">Where</p><p>${SHOP.addr}</p><p class="sm">The corner entrance, under the blade sign.</p><a class="lk" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Bandra+Bandstand+Mumbai">Get directions</a></div><div><p class="lb">When</p><div id="hrs"></div><p id="live" class="sm" aria-live="polite"></p></div><div><p class="lb">Reach us</p><p><a href="tel:${SHOP.phone.replace(/\s/g,'')}">${SHOP.phone}</a></p><p><a href="mailto:${SHOP.mail}">${SHOP.mail}</a></p><p>Instagram ${SHOP.ig}</p></div></div></section>
+<section class="band"><div class="wrap vmap"><svg class="map" viewBox="0 0 400 300" role="img" aria-label="Illustrative map with the SEVN marker at a street corner"><rect width="400" height="300" fill="#E2D9C9"/><path d="M0 220C80 200 120 250 200 240S330 270 400 250V300H0Z" fill="#cdc1ab"/><rect x="250" y="30" width="100" height="70" rx="6" fill="#d6cbb8"/><g stroke="#fff" fill="none" stroke-linecap="round"><path d="M0 120H400" stroke-width="9"/><path d="M180 0V300" stroke-width="9"/><path d="M0 60L400 190" stroke-width="4"/><path d="M290 0V300" stroke-width="4"/><path d="M60 0V300" stroke-width="4"/></g><g font-family="Jost,sans-serif" font-size="11" fill="#31261C" opacity=".6"><text x="196" y="40">Bandstand Promenade</text><text x="14" y="112">Hill Road</text></g><g fill="#31261C"><rect x="170" y="97" width="20" height="3"/><rect x="170" y="103" width="14" height="3"/><rect x="170" y="109" width="18" height="3"/></g><g fill="none" stroke="#31261C"><rect x="360" y="16" width="24" height="24"/><path d="M366 28H378M372 22V34"/><rect x="360" y="44" width="24" height="24"/><path d="M366 56H378"/></g></svg>${PIC('photo-1554118811-1e0d58224f24','The SEVN interior in the morning','')}</div></section>
+<section class="band"><div class="wrap es"><p class="sm" style="margin:0"><b>Parking</b><br>Paid parking on Bandstand Promenade, two minutes away.</p><p class="sm" style="margin:0"><b>Transit</b><br>Bandra station is a ten-minute walk; buses stop at Hill Road.</p><p class="sm" style="margin:0"><b>Access</b><br>Step-free entrance, high chairs available, dogs welcome outside.</p></div></section>
+<section class="band cr"><div class="wrap"><h2>We'll keep a table.</h2>${L('Book a table','#/book')}<p class="sm">Looking to open a SEVN rather than visit one? <a href="#/partner" style="border-bottom:1px solid">Partner with us →</a></p></div></section>`;
+
+const PW=n=>{let d='M0 8';const w=100/n;for(let i=0;i<n;i++)d+=`q${w/4} -8 ${w/2} 0t${w/2} 0`;return d};
+const CARD=(id,n,intro)=>`<div class="fp"><div class="in" id="${id}"><div class="fc">${BARS}<svg class="pg2" viewBox="0 0 100 16" preserveAspectRatio="none" aria-hidden="true"><path d="${PW(n)}" opacity=".25"/><path id="${id}p" pathLength="1" d="${PW(n)}" style="stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .4s var(--e)"/></svg><div id="${id}s"></div></div><div class="bc" id="${id}b" aria-live="polite"></div></div></div>`;
+P.book=()=>`<section class="stage" style="padding-top:150px;min-height:100vh"><h1>A table awaits.</h1>${CARD('bk',5)}</section>`;
+P.partner=()=>`<section class="sp2">${PIC('photo-1559925393-8be0ec4767c8','The SEVN storefront at dusk with the blade sign lit')}<div><h1>BRING SEVN TO YOUR CITY.</h1><p class="body">Interested in building a SEVN of your own? We're looking to grow with people who believe in good food, thoughtful hospitality and places people genuinely want to return to.</p><a class="btn" href="#" data-sc="inq">Start an inquiry →</a> &nbsp; <a class="lk" href="#" data-sc="how">How it works</a></div></section>
+<section class="band"><div class="wrap" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,6vw,100px)" id="why"><h2>MORE THAN OPENING A CAFÉ.</h2><p class="body">SEVN is a complete experience, not a menu with a logo on it. Food, coffee, design, hospitality, community and consistency are developed as one system — and a SEVN in another city has to arrive with all six intact. That is what a partner takes on, and it is what makes the brand worth taking on.</p></div><div class="wrap wd"><span>Food</span><span>Coffee</span><span>Design</span><span>Hospitality</span><span>Community</span><span>Consistency</span></div></section>
+<section class="band cr"><div class="wrap"><h2 style="margin-bottom:30px">Why SEVN</h2>${[['A distinct brand','A recognisable identity built to stay consistent across every touchpoint.'],['A considered experience','Food, coffee, design and hospitality working as one system.'],['Built for community',"A café intended to become part of people's everyday routines."],['A system that can grow','A clear operating and brand framework that translates across locations.']].map(r=>`<div class="pl"><h3>${r[0]}</h3><p class="body">${r[1]}</p></div>`).join('')}</div></section>
+<section class="band dk"><div class="wrap wh"><h2>THE RIGHT PLACE NEEDS THE RIGHT PEOPLE.</h2><div>${['Someone who understands hospitality as a craft, not a category.','Someone who cares what the room feels like at 4pm on a slow Tuesday.','Someone who will protect the brand when it would be easier not to.','Someone who knows their own city better than we do.','Someone who will be in the business, not above it.','Someone with the financial capability to open properly rather than cheaply.','Someone looking for a long relationship, not a quick one.'].map(t=>`<p>${t}</p>`).join('')}<p class="sm">If most of that sounds like you, the next section is the practical part.</p></div></div></section>
+<section class="band" id="how"><div class="wrap"><h2>How it works</h2><div class="tl">${[['Inquire','Tell us about yourself, your city and what you\'re looking to build.'],['Connect','If there looks to be a fit, the SEVN team gets in touch for a first conversation.'],['Explore','Market, location, operating expectations and commercial requirements.'],['Align','Confirm whether the opportunity works for both sides.'],['Build','Location planning, brand implementation, setup and launch.']].map((s,i)=>`<div><p class="lb">0${i+1}</p><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join('')}</div></div></section>
+<section class="stage" id="inq"><h2>Let's talk about your city.</h2><p class="body" style="text-align:center;margin:-20px auto 36px">Tell us a little about yourself and where you'd like to bring SEVN.</p>${CARD('iq',4)}</section>`;
+
+P.home=()=>`<div class="hm"><section class="ch l hero dr" aria-labelledby="h0"><div class="txt"><h1 id="h0">ELEVATING<br>EVERYDAY<br>MOMENTS.</h1><p class="sp">Café &amp; Bakehaus. Rooted in craftsmanship, guided by simplicity.</p><a class="lk" id="go" href="#/">Follow the seven notes</a></div></section>${MOODS.map((n,i)=>`<section class="ch ${i%2?'l':'r'} dr" aria-labelledby="h${i+1}"><div class="txt"><p class="lb">${esc(n[0])}</p><h2 id="h${i+1}">${n[1]}</h2><p class="sp">${n[2]}</p></div></section>`).join('')}<section class="ch l dr" id="end" aria-labelledby="he"><div class="txt"><h2 id="he">What would you come back for?</h2><p class="sp">The door is open from seven.</p><a class="btn" href="#/book">Book a table</a><br><a class="lk" href="#/menu">See the full menu</a><p class="fr">Interested in bringing SEVN to your city? <a href="#/partner">Franchise inquiries</a></p></div></section></div><canvas id="c" aria-hidden="true"></canvas><div id="bn" class="out" aria-hidden="true"></div><div id="cnt" aria-hidden="true"><span id="cn">00 / 07</span><i><b id="cb"></b></i></div><div id="side" aria-hidden="true">Scroll to follow the line</div><div id="tour"><button id="tb" type="button">Start tour</button><button id="sb" type="button" aria-label="Change tour speed">1×</button><button id="rb" type="button" aria-label="Restart tour" hidden>↺</button></div>`;
+P.article=slug=>{const i=Math.max(0,JN.findIndex(j=>SLUG(j[1])===slug)),j=JN[i],more=JN.filter((_,x)=>x!==i).slice(0,2);
+return`<svg id="rd" viewBox="0 0 20 400" preserveAspectRatio="none" aria-hidden="true"><path id="rdp" pathLength="1" d="M10 0C20 50 0 100 10 150S20 250 10 300 0 350 10 400"/></svg><article class="band art"><p class="lb">${j[0]}</p><h1>${esc(j[1])}</h1><p class="stand">${j[4]}</p><p class="cap" style="margin-top:6px">by ${j[3]} / ${j[2]}</p>${WV(1)}<p class="body">The first hour of the day asks very little of us. A cup, a chair and a window are enough, and the room does the rest.</p><p class="body">In the bakehaus the day starts earlier. Dough rests, the ovens climb to temperature and the first tray is checked twice before anyone else arrives.</p><div class="pic brk" style="aspect-ratio:16/9">${IMG(j[5],j[1])}</div><p class="cap">The bakehaus, a little before seven.</p><div class="pq">${WV(1)}<p>Nothing goes on the plate that isn't doing something.</p>${WV(1)}</div><p class="body">None of it is complicated, and that is the point. We choose fewer things, do them properly, and leave the door open from seven.</p></article><section class="band cr"><div class="wrap"><p class="lb">Two more stories</p>${more.map(m=>`<a class="je" href="#/journal/${SLUG(m[1])}"><p class="lb">${m[0]}</p><h3>${esc(m[1])}<i></i></h3></a>`).join('')}<h2 style="margin-top:50px">Come and read it in person.</h2>${L('Book a table','#/book')}</div></section>`};
+P['404']=()=>`<section class="band" style="min-height:100vh;padding-top:180px"><div class="wrap"><h1 style="max-width:12ch">This one's not on the menu.</h1>${L('Back to the front door','#/')}</div></section>`;
+
+/* ---------- behaviour per page ---------- */
+let off=[];const on=(t,e,f,o)=>{t.addEventListener(e,f,o);off.push(()=>t.removeEventListener(e,f,o))};
+const I={};
+I.menu=()=>{
+ const ov=$('#ov'),nv=$$('.rail a'),ss=$$('.ms');
+ $$('.mi').forEach(m=>{m.onmouseenter=()=>{ov.innerHTML=IMG(dishId(m.dataset.n),m.dataset.n);ov.classList.add('o')};m.onmouseleave=()=>ov.classList.remove('o')});
+ $$('.ml').forEach(l=>on(l,'mousemove',e=>{ov.style.transform=`translate(${e.clientX+28}px,${e.clientY-120}px)`}));
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){nv.forEach((a,i)=>a.classList.toggle('on',ss[i]===e.target))}}),{rootMargin:'-30% 0px -60% 0px'});
+ ss.forEach(s=>io.observe(s));off.push(()=>io.disconnect());
+};
+I.story=()=>{
+ const pin=$('.pin'),vl=$('#vl');
+ const f=()=>{const r=pin.getBoundingClientRect(),p=Math.min(1,Math.max(0,-r.top/(r.height-innerHeight)));vl.style.cssText=`stroke-dasharray:1;stroke-dashoffset:${RM?0:1-p}`};
+ on(window,'scroll',f,{passive:true});f();
+};
+I.article=()=>{const p=$('#rdp'),f=()=>{const m=Math.max(1,document.documentElement.scrollHeight-innerHeight);p.style.cssText='stroke-dasharray:1;stroke-dashoffset:'+(RM?0:1-Math.min(1,scrollY/m))};on(window,'scroll',f,{passive:true});f()};
+I.journal=()=>$$('.fl button').forEach(b=>b.onclick=()=>{$$('.fl button').forEach(x=>x.setAttribute('aria-pressed',x===b));$$('.je').forEach(j=>j.hidden=!(b.dataset.f==='All'||j.dataset.c===b.dataset.f))});
+I.visit=()=>{
+ const d=new Date(),t=(d.getDay()+6)%7,hm=x=>{const[a,b]=x.split(':').map(Number);return a*60+b};
+ $('#hrs').innerHTML=HOURS.map((h,i)=>`<div class="hr${i===t?' t':''}"><span>${h[0]}</span><span>${h[1]} – ${h[2]}</span></div>`).join('');
+ const now=d.getHours()*60+d.getMinutes(),o=hm(HOURS[t][1]),c=hm(HOURS[t][2]);
+ $('#live').textContent=now>=o&&now<c?'OPEN NOW':'CLOSED UNTIL '+(now<o?HOURS[t][1]:HOURS[(t+1)%7][1]);
+};
+const sess=(k,v)=>{try{return v===undefined?JSON.parse(sessionStorage.getItem(k)||'null'):v===null?sessionStorage.removeItem(k):sessionStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+const flip=(id)=>$('#'+id).classList.add('f');
+I.book=()=>{
+ const days=[...Array(7)].map((_,i)=>{const d=new Date();d.setDate(d.getDate()+i);return{d,l:i?i===1?'Tomorrow':d.toLocaleDateString('en',{weekday:'short',day:'numeric'}):'Today'}});
+ const S={n:0},root=$('#bks'),pth=$('#bkp');const pre=sess('pre');sess('pre',null);if(pre){const di=days.findIndex(x=>x.d.getFullYear()+'-'+String(x.d.getMonth()+1).padStart(2,'0')+'-'+String(x.d.getDate()).padStart(2,'0')===pre.d);if(di>=0){S.d=di;S.t=pre.t;S.g=pre.g;S.n=3}}root.setAttribute('aria-live','polite');
+ const nav=(back,next)=>`<div class="nv">${back?'<button class="lk" data-b>Back</button>':'<span></span>'}${next||''}</div>`;
+ const show=()=>{
+  pth.style.strokeDashoffset=1-S.n/5;let h='';
+  if(S.n===0)h=`<h3>Date</h3><div class="chs">${days.map((x,i)=>`<button class="chp" data-d="${i}" aria-pressed="${S.d===i}">${x.l}</button>`).join('')}</div>`;
+  if(S.n===1)h=`<h3>Time</h3><div class="chs">${SLOTS.map((t,i)=>`<button class="chp" data-t="${t}" aria-pressed="${S.t===t}"${(i+S.d)%4===3?' disabled':''}>${t}</button>`).join('')}</div>${nav(1)}`;
+  if(S.n===2)h=`<h3>Guests</h3><div class="chs">${[1,2,3,4,5,6,7,8,'9+'].map(g=>`<button class="chp" data-g="${g}" aria-pressed="${S.g==g}">${g}</button>`).join('')}</div>${S.g==='9+'?'<p class="sm">We\'ll call you back to arrange this one.</p>':''}${nav(1,S.g?'<button class="btn" data-c>Continue →</button>':'')}`;
+  if(S.n===3)h=`<h3>Name &amp; number</h3><label class="fd">Name<input id="bn" autocomplete="name" value="${esc(S.name||'')}"></label><label class="fd">Phone<input id="bp" type="tel" autocomplete="tel" value="${esc(S.ph||'')}"></label><label class="fd">Email (optional)<input id="be" type="email" autocomplete="email" value="${esc(S.em||'')}"></label><p class="er" id="ber" role="alert"></p>${nav(1,'<button class="btn" data-c>Continue →</button>')}`;
+  if(S.n===4)h=`<h3>Anything we should know?</h3><label class="fd"><textarea id="bt" rows="3" placeholder="Window table, birthday, allergy — anything.">${esc(S.note||'')}</textarea></label>${nav(1,'<button class="btn" data-ok>Find a table →</button>')}`;
+  root.innerHTML=h;const hd=$('h3',root);if(hd){hd.tabIndex=-1;S.f&&hd.focus({preventScroll:true})}S.f=1;
+ };
+ on(root,'click',e=>{
+  const b=e.target.closest('button');if(!b)return;
+  if(b.dataset.d!==undefined){S.d=+b.dataset.d;S.n=1}
+  else if(b.dataset.t){S.t=b.dataset.t;S.n=2}
+  else if(b.dataset.g){S.g=b.dataset.g;if(S.g!=='9+')S.n=3}
+  else if(b.dataset.b!==undefined)S.n--;
+  else if(b.dataset.c!==undefined){
+   if(S.n===3){S.name=$('#bn').value.trim();S.ph=$('#bp').value.trim();S.em=$('#be').value.trim();if(!S.name||!S.ph){$('#ber').textContent="We'll need a number to confirm the table.";return}}
+   S.n++}
+  else if(b.dataset.ok!==undefined){S.note=$('#bt').value;const x=days[S.d].d,pd=v=>String(v).padStart(2,'0'),[hh,mm]=S.t.split(':').map(Number),st=new Date(x.getFullYear(),x.getMonth(),x.getDate(),hh,mm),en=new Date(+st+5400000),fm=q=>`${q.getFullYear()}${pd(q.getMonth()+1)}${pd(q.getDate())}T${pd(q.getHours())}${pd(q.getMinutes())}00`,cal='https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent('Table at SEVN')+'&dates='+fm(st)+'/'+fm(en)+'&details='+encodeURIComponent(S.g+' guests, under '+S.name),dt=x.toLocaleDateString('en',{weekday:'long',day:'numeric',month:'long'}).toUpperCase();
+   $('#bkb').innerHTML=`<p class="lb">SEVN · Café &amp; Bakehaus</p><h2>YOUR TABLE IS WAITING.</h2><p>${dt}<br>${S.t} · ${S.g} GUEST${S.g==1?'':'S'}</p><p>Under: ${esc(S.name)}</p><p>SEE YOU SOON.</p><div class="bl"><a class="lk" href="${cal}" target="_blank" rel="noopener">Add to calendar</a><a class="lk" href="#/visit">Get directions</a><button class="lk" data-r>Change this booking</button></div>`;
+   flip('bk');$('#bkb button[data-r]').onclick=()=>{$('#bk').classList.remove('f');S.n=0;show()};return}
+  show();
+ });
+ show();
+};
+I.partner=()=>{
+ const FS=[['About you',[['name','Full name','text',1],['email','Email address','email',1],['phone','Phone number, with country code','tel',1],['city','City of residence','text',1]]],
+ ['Your market',[['market',"City or market you're interested in",'text',1],['state','State or region','text',1],['prop','Do you already have a property identified?','sel:Yes|No|Currently exploring',1],['loc','Proposed location or area','text',0,'prop=Yes'],['size','Approximate property size','text',0,'prop=Yes'],['ptype','Property type','text',0,'prop=Yes']]],
+ ['Your experience',[['occ','Current occupation or business','text',1],['ops','Do you currently operate any businesses?','sel:Yes|No',1],['opsd','Tell us briefly about them','area',0,'ops=Yes'],['exp','Experience in','chk:Hospitality|F&B|Retail|Real estate|Other business|First venture',1]]],
+ ['Final details',[...(RANGES.length?[['inv','Expected investment range','sel:'+RANGES.join('|'),1]]:[]),['when','Preferred timeline','sel:Immediately|3–6 months|6–12 months|12+ months|Exploring for now',1],['why','Why do you want to open a SEVN?','area',1],['more',"Anything else you'd like us to know?",'area',0],['consent','I agree to be contacted by the SEVN team regarding this inquiry.','cb',1]]]];
+ const MSG={email:'Please enter a valid email address.',phone:"We'll need a phone number to reach you.",city:'Which city are you thinking about?',consent:"Please confirm you're happy for us to get in touch."};
+ const D=sess('sevnDraft')||{},root=$('#iqs'),pth=$('#iqp');let n=0,fo=0;root.setAttribute('aria-live','polite');
+ const fld=f=>{const[k,l,t,r,c]=f,v=D[k],lab=esc(l)+(r?'':' (optional)'),dc=c?` data-if="${c}"`:'';
+  if(t==='cb')return`<div class="fd cb" data-k="${k}"><input type="checkbox" id="f_${k}" name="${k}"${v?' checked':''}><label for="f_${k}">${lab}<span class="er"></span></label></div>`;
+  let el;if(t==='area')el=`<textarea name="${k}" rows="3">${esc(v||'')}</textarea>`;
+  else if(t.startsWith('sel:'))el=`<select name="${k}"><option value="">Select</option>${t.slice(4).split('|').map(o=>`<option${v===o?' selected':''}>${esc(o)}</option>`).join('')}</select>`;
+  else if(t.startsWith('chk:'))el=`<div class="xs">${t.slice(4).split('|').map(o=>`<label><input type="checkbox" name="${k}" value="${esc(o)}"${(v||[]).includes(o)?' checked':''}>${esc(o)}</label>`).join('')}</div>`;
+  else el=`<input name="${k}" type="${t}" value="${esc(v||'')}">`;
+  return`<div class="fd" data-k="${k}"${dc}><label>${lab}</label>${el}<span class="er" role="alert"></span></div>`};
+ const vis=()=>$$('[data-if]',root).forEach(e=>{const[a,b]=e.dataset.if.split('=');e.hidden=D[a]!==b});
+ const show=()=>{pth.style.strokeDashoffset=1-(n+1)/4;
+  root.innerHTML=`<p class="lb">${n+1} / 4</p><h3>${FS[n][0]}</h3>${FS[n][1].map(fld).join('')}<input class="hp" name="company_website" tabindex="-1" autocomplete="off" aria-hidden="true">${n===3?'<p class="sm">We use your details only to reply to this inquiry.</p><p class="er" id="ie" role="alert"></p>':''}<div class="nv">${n?'<button class="lk" data-b>Back</button>':'<span></span>'}<button class="btn" data-c>${n===3?'Submit inquiry →':'Continue →'}</button></div>`;vis();const hd=$('h3',root);hd.tabIndex=-1;fo&&hd.focus({preventScroll:true});fo=1};
+ const val=()=>{let first=null;$$('.fd',root).forEach(w=>{const f=FS[n][1].find(x=>x[0]===w.dataset.k);let bad=false;
+  if(f&&f[3]&&!w.hidden){const v=D[f[0]];bad=f[2]==='cb'?!v:Array.isArray(v)?!v.length:!(v||'').trim()||(f[2]==='email'&&!/^\S+@\S+\.\S+$/.test(v))}
+  w.classList.toggle('bad',bad);$('.er',w).textContent=bad?MSG[f[0]]||'Please fill this in.':'';if(bad&&!first)first=w});
+  if(first){const i=$('input,select,textarea',first);i&&i.focus()}return!first};
+ on(root,'input',e=>{const t=e.target,k=t.name;if(!k||k==='company_website')return;D[k]=t.type==='checkbox'?(t.value&&t.value!=='on'?$$(`[name="${k}"]:checked`,root).map(x=>x.value):t.checked):t.value;sess('sevnDraft',D);vis()});
+ on(root,'click',async e=>{const b=e.target.closest('button');if(!b)return;
+  if(b.dataset.b!==undefined){n--;show()}
+  else if(b.dataset.c!==undefined){if(!val())return;if(n<3){n++;show();return}
+   b.disabled=true;b.textContent='Sending…';
+   if($('.hp',root).value){await sleep(600)}else if(LIVE){try{const r=await fetch('/api/franchise-inquiry',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(D)});if(!r.ok)throw 0}catch(x){b.disabled=false;b.textContent='Submit inquiry →';$('#ie').textContent="That didn't send. Try again, or email us and we'll pick it up from there.";return}}else await sleep(800);
+   sess('sevnDraft',null);
+   $('#iqb').innerHTML=`<h2>THANKS FOR REACHING OUT.</h2><p>We've received your franchise inquiry. If there looks to be a potential fit, the SEVN team will get in touch using the details you've shared.</p><p>Maybe the next SEVN starts here.</p><div class="bl"><a class="lk" href="#/">Back to SEVN</a></div>`;flip('iq')}});
+ show();
+};
+
+I.home=()=>{
+ const cl=(v,a=0,b=1)=>Math.max(a,Math.min(b,v));
+ const FILM='';   // optional: an .mp4 URL here makes the page scrub real footage instead of the photographs
+ const CR='#E2D9C9',N=9;
+ const RING=['SEVN / CAFÉ & BAKEHAUS',...MOODS.map(n=>n[0].toUpperCase()),'THE DOOR IS OPEN FROM SEVEN'];
+ let seen=0;try{seen=sessionStorage.getItem('sevn')}catch(e){}
+ if(!RM&&!seen){try{sessionStorage.setItem('sevn','1')}catch(e){}
+  document.body.insertAdjacentHTML('beforeend','<div id="ld" aria-hidden="true"><div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.6c6-.7 12-.7 18 0v2.1c-6-.6-12-.6-18 0z"/><path d="M4.4 11c5.1.7 10.1.7 15.2 0v2c-5.1-.6-10.1-.6-15.2 0z"/><path d="M3 16.3c6-.6 12-.6 18 0v2.1c-6-.7-12-.7-18 0z"/></svg><p>Preparing the morning<i>.</i><i>.</i><i>.</i></p></div></div>');
+  const ld=$('#ld');setTimeout(()=>{ld.classList.add('out');setTimeout(()=>ld.remove(),600)},1300);off.push(()=>ld.remove())}
+ document.body.classList.add('dr');
+ const cv=$('#c'),ctx=cv.getContext('2d'),nv=$('#nav'),chl=$$('#chn a');
+ let dpr=1,H1=innerHeight,dirty=true,vid=null,rid=0,raf=0,tr=0,sp=1;
+ const pics=FILM?[]:FILMPICS.map(id=>{const i=new Image();i.onload=()=>{dirty=true};i.src=PH(id);return i});
+ const FB=['#4a3b2d','#3b2e22','#52402f','#463727','#3f3225','#4d3b2b','#3a2d21','#44362a','#2f261d'];
+ if(FILM){vid=document.createElement('video');Object.assign(vid,{src:FILM,muted:true,playsInline:true,preload:'auto'});vid.style.cssText='position:fixed;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1';document.body.prepend(vid)}
+ const size=()=>{dpr=Math.min(2,devicePixelRatio||1);cv.width=Math.round(innerWidth*dpr);cv.height=Math.round(innerHeight*dpr);H1=$('.hm .ch').offsetHeight||innerHeight;dirty=true};
+ on(window,'resize',size);size();
+ /* s = scroll position in screens. Chapter k is centred at s = k. */
+ function pic(i,s,W,H){
+  const im=pics[i];
+  if(im&&im.complete&&im.naturalWidth){const r=Math.max(W/im.naturalWidth,H/im.naturalHeight)*(1.04+.08*cl(s-(i-.5))),w=im.naturalWidth*r,h=im.naturalHeight*r;ctx.drawImage(im,(W-w)/2,(H-h)/2,w,h)}
+  else{const g=ctx.createLinearGradient(0,0,W,H);g.addColorStop(0,FB[i%FB.length]);g.addColorStop(1,'#1c140d');ctx.fillStyle=g;ctx.fillRect(0,0,W,H)}
+ }
+ function draw(s){
+  const W=innerWidth,H=innerHeight,mob=W<800;
+  ctx.setTransform(dpr,0,0,dpr,0,0);ctx.globalAlpha=1;
+  const k=cl(Math.floor(s+.8),0,N-1),t=k?cl((s-k+.8)/.55):1;
+  if(FILM){ctx.clearRect(0,0,W,H);if(vid&&vid.duration)vid.currentTime=cl(s/(N-1))*(vid.duration-.03)}
+  else{
+   pic(k?k-1:0,s,W,H);
+   if(k&&t>0){                       // the flow line sweeps and reveals the next photograph behind it
+    const A=36,ex=y=>t*(W+2*A)-A+Math.sin(y*.013+s*3)*A;
+    ctx.save();ctx.beginPath();ctx.moveTo(0,-10);
+    for(let y=-10;y<=H+10;y+=12)ctx.lineTo(ex(y),y);
+    ctx.lineTo(0,H+10);ctx.closePath();ctx.clip();pic(k,s,W,H);ctx.restore();
+    if(t<1){ctx.strokeStyle=CR;ctx.globalAlpha=.85;ctx.lineWidth=1.2;ctx.beginPath();for(let y=-10;y<=H+10;y+=12)y>-10?ctx.lineTo(ex(y),y):ctx.moveTo(ex(y),y);ctx.stroke();ctx.globalAlpha=1}
+   }
+   ctx.fillStyle='rgba(22,15,9,.54)';ctx.fillRect(0,0,W,H);                 // scrim keeps the type legible
+   const g=ctx.createLinearGradient(0,H*.55,0,H);g.addColorStop(0,'rgba(22,15,9,0)');g.addColorStop(1,'rgba(22,15,9,.45)');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+  }
+  ctx.strokeStyle=CR;ctx.fillStyle=CR;
+  /* left margin: one line, drawn by scrolling */
+  const p=cl(s/(N-1));
+  ctx.globalAlpha=.5;ctx.lineWidth=1;ctx.beginPath();
+  for(let y=0;y<=p*H;y+=6){const x=Math.min(26,W*.04)+Math.sin(y*.02+s)*5;y?ctx.lineTo(x,y):ctx.moveTo(x,y)}
+  ctx.stroke();
+  /* the bundle: seven strokes, one lit per note */
+  const idx=cl(Math.round(s),0,N-1),a=idx>=1&&idx<=7?idx-1:-1,base=H*(mob?.47:.8);
+  for(let j=0;j<7;j++){
+   ctx.globalAlpha=j===a?1:(a<0?.55:.28);ctx.lineWidth=j===a?1.6:.75;ctx.beginPath();
+   for(let x=0;x<=W+8;x+=8){const y=base+j*9+Math.sin(x*.006+s*1.4+j*.32)*(24+10*Math.sin(s*.8))+Math.sin(x*.013-s*.9)*7;x?ctx.lineTo(x,y):ctx.moveTo(x,y)}
+   ctx.stroke();
+  }
+  /* big chapter number: typographic, changes with every note */
+  const bn=$('#bn');
+  if(bn&&bn.dataset.i!==String(idx)){
+   bn.dataset.i=idx;const m=idx>=1&&idx<=7?MOODS[idx-1]:null;
+   bn.classList.add('out');
+   clearTimeout(bn._t);bn._t=setTimeout(()=>{if(m){bn.innerHTML='<b>'+String(idx).padStart(2,'0')+'</b><span>'+m[1]+'</span>';bn.classList.toggle('lft',idx%2===1);bn.classList.remove('out')}},260);
+  }
+  $('#cn').textContent=String(Math.min(7,idx)).padStart(2,'0')+' / 07';
+  $('#cb').style.transform='scaleX('+p+')';
+  chl.forEach(a=>a.classList.toggle('on',+a.dataset.ch===idx));
+  $('#rb').hidden=s<.1;
+ }
+ let cur=scrollY/H1,last=performance.now();
+ const tick=n=>{
+  const dt=Math.min(.08,(n-last)/1e3);last=n;
+  const tg=scrollY/H1,d=tg-cur;
+  if(Math.abs(d)>5e-4){cur+=RM?d:d*(1-Math.exp(-13*dt));dirty=true}   // eased chase; nothing moves unless the visitor does
+  else if(cur!==tg){cur=tg;dirty=true}
+  if(dirty){dirty=false;draw(cur)}
+  nv.classList.toggle('sm',scrollY>.8*innerHeight);
+  rid=requestAnimationFrame(tick);
+ };
+ rid=requestAnimationFrame(tick);
+ const go1=y=>scrollTo({top:y,behavior:RM?'auto':'smooth'});
+ $('#go').onclick=e=>{e.preventDefault();go1(H1)};
+ chl.forEach(a=>a.onclick=e=>{e.preventDefault();go1(+a.dataset.ch*H1)});
+
+ /* tour: auto-scroll, cancelled by any manual input */
+ const tb=$('#tb'),sb=$('#sb'),rb=$('#rb');
+ const mx=()=>Math.max(1,document.documentElement.scrollHeight-innerHeight);
+ const label=()=>{tb.textContent=tr?'Pause':scrollY>20?'Resume':'Start tour'};
+ const stop=()=>{cancelAnimationFrame(raf);tr=0;label()};
+ const run=from=>{
+  const t0=performance.now(),dur=Math.max(1500,(36000/sp)*(1-from/mx()));
+  tr=1;label();
+  const step=n=>{const k=cl((n-t0)/dur);scrollTo(0,from+(mx()-from)*k);k<1&&tr?raf=requestAnimationFrame(step):stop()};
+  raf=requestAnimationFrame(step);
+ };
+ tb.onclick=()=>{if(tr)return stop();run(scrollY>=mx()-2?0:scrollY)};
+ rb.onclick=()=>{stop();scrollTo(0,0);setTimeout(()=>run(0),50)};
+ sb.onclick=()=>{sp=sp===1?2:1;sb.textContent=sp+'×'};
+ ['wheel','touchstart'].forEach(e=>on(window,e,()=>tr&&stop(),{passive:true}));
+ on(window,'keydown',e=>{if(tr&&!e.target.closest('#tour'))stop()});
+ on(window,'scroll',()=>{if(!tr)label()},{passive:true});
+ off.push(()=>{cancelAnimationFrame(rid);cancelAnimationFrame(raf);document.body.classList.remove('dr');vid&&vid.remove()});
+};
+
+/* ---------- router ---------- */
+const TITLES={home:'Home','404':'Not found',menu:'Menu',story:'Our Story',journal:'Journal',visit:'Visit',book:'Book a Table',partner:'Partner With SEVN'};
+const META={home:'SEVN Café & Bakehaus. Coffee, pastries and slower mornings, rooted in craftsmanship and guided by simplicity.',menu:'The SEVN menu: coffee, signatures, iced drinks, pastries, sourdough, kitchen plates and sweets, built around seven notes.',story:'Our story: craftsmanship, simplicity and seven notes that shape every day at SEVN.',journal:'Notes from the SEVN bakehaus on coffee, baking, people and places.',visit:'Visit SEVN Café & Bakehaus in Bandra West, Mumbai. Hours, directions and contact details.',book:'Book a table at SEVN in five quick steps.',partner:'Bring SEVN to your city. Explore the partnership and send an inquiry.',article:'Read the latest from the SEVN journal.'};
+const LD={"@context":"https://schema.org","@type":"CafeOrCoffeeShop"};
+function go(){
+ off.forEach(f=>f());off=[];
+ const pt=location.hash.replace(/^#\/?/,'').split('?')[0].split('/'),r0=pt[0],r=r0==='franchise'?'partner':r0,slug=pt[1],nv=$('#nav');
+ const k=r===''?'home':(r==='journal'&&slug)?'article':(P[r]&&r!=='article')?r:'404',cur=k==='article'?'journal':k;
+ document.title=k==='home'?'SEVN — Café & Bakehaus':(k==='article'?'Journal':TITLES[k]||'Not found')+' — SEVN Café & Bakehaus';
+ const md=$('meta[name=description]');if(md)md.content=META[k]||META.home;
+ const ld=$('#sevn-ld');if(ld){if(!ld.dataset.base)ld.dataset.base=ld.textContent;ld.textContent=k==='partner'?JSON.stringify({"@context":"https://schema.org","@type":"WebPage","name":"Partner With SEVN","description":META.partner}):ld.dataset.base}
+ document.body.dataset.p=k;
+ $('#app').innerHTML=P[k](slug)+(k==='home'?'':F());
+ scrollTo(0,0);closeMenu();
+ document.body.classList.remove('dr');nv.classList.remove('sm');nv.classList.toggle('h',k==='home');
+ $$('#nav [data-r]').forEach(a=>a.dataset.r===cur?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current'));
+ I[k]&&I[k]();
+ const bb=$('#bkbar');if(bb)bb.onsubmit=e=>{e.preventDefault();const sl=$$('select',bb);sess('pre',{g:sl[0].value,d:$('input',bb).value,t:sl[1].value});location.hash='#/book'};
+ const bt=$('#bt');if(bt){bt.onclick=()=>scrollTo({top:0,behavior:RM?'auto':'smooth'});const f=()=>bt.classList.toggle('o',scrollY>700);on(window,'scroll',f,{passive:true});f()}
+ const nl=$('#nl');nl&&(nl.onsubmit=e=>{e.preventDefault();$('#nlm').textContent="You're on the list. See you at seven."});
+}
+const closeMenu=()=>{$('#mp').classList.remove('o');$('#bg').setAttribute('aria-expanded','false')};
+/* page transition: out 200 / sweep 160 / in 200. Reduced motion: a 120ms opacity cross. */
+const tp=document.createElement('div');tp.id='tp';tp.setAttribute('aria-hidden','true');tp.innerHTML=BARS;document.body.appendChild(tp);
+let first=true,busy=false;
+async function route(){
+ const app=$('#app');
+ if(first){first=false;go();return}
+ if(RM){app.style.opacity=0;await sleep(120);go();app.style.opacity=1;return}
+ if(busy){go();return}
+ busy=true;app.classList.add('out');await sleep(200);
+ tp.className='in';await sleep(160);
+ go();app.classList.remove('out');app.focus({preventScroll:true});
+ await sleep(40);tp.className='out';await sleep(200);tp.className='';busy=false;
+}
+document.addEventListener('click',e=>{if(e.target.closest('a[href="#"]'))e.preventDefault();if(e.target.closest('#mp a'))closeMenu();const a=e.target.closest('[data-sc]');if(!a)return;e.preventDefault();const t=document.getElementById(a.dataset.sc);t&&(t.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'}),t.tabIndex===-1&&t.focus({preventScroll:true}))});
+addEventListener('hashchange',route);addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});route();
+})();
+</script>
+</body>
+</html>
